@@ -10,22 +10,23 @@ This project demonstrates the KISS principle through two Python implementations:
 - `bad_KISS.py`: A more complicated version showing what happens when we don't follow KISS
 
 ## The Example
-The example demonstrates a simple task: **Shopping Cart Total Calculator**
+The example demonstrates a simple task: **Basic Calculator Application**
 
 ### Good Implementation (Following KISS)
-- Simple function to calculate total price
-- Clear input and output
-- Straightforward calculations
+- Simple functions for each operation
+- Clear input and output handling
+- Straightforward menu and user interaction
 - Easy to understand and maintain
+- Each function does one thing well
 
 ### Bad Implementation (Not Following KISS)
-- Unnecessary classes and methods
+- Unnecessary complexity
 - Overcomplicated data structures
 - Extra steps that aren't needed
 - Harder to understand and maintain
 
 ## Why This Example?
-This example shows how a simple task (adding up prices) can be either:
+This example shows how a simple task (performing basic calculations) can be either:
 - Solved in a simple, straightforward way
 - Made unnecessarily complicated
 
@@ -49,4 +50,4 @@ python bad_KISS.py
 - If a simple solution works, use it
 
 ## Author
-Created for M426 by Tim H. - KISS Principle Demonstration
+Created for M426 by AdminGod - KISS Principle Demonstration
