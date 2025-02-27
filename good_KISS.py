@@ -1,32 +1,84 @@
-# Good Implementation following KISS Principle
-# This file shows a simple way to calculate shopping cart total
+# A good, KISS-based calculator with basic operations
+import math
 
-"""
-KISS Implementation Plan:
+def add(a, b):
+    return a + b
 
-Simple Shopping Cart Calculator
-- Takes a list of prices
-- Adds them up
-- Applies a discount if total is over 100
-- Returns final total
+def subtract(a, b):
+    return a - b
 
-Why this is good KISS:
-1. Simple list for prices
-2. One function that does one thing
-3. Clear logic without unnecessary steps
-4. Easy to understand and modify
-5. No complex classes needed
+def multiply(a, b):
+    return a * b
 
-Example structure:
+def divide(a, b):
+    if b == 0:
+        return "Undefined"
+    return a / b
 
-def calculate_total(prices):
-    # Sum all prices
-    # Apply discount if needed
-    # Return total
-    pass
+def square(a):
+    return a * a
 
-Example usage:
-prices = [10.99, 24.99, 5.99]
-total = calculate_total(prices)
-print(f"Total: ${total:.2f}")
-"""
+def square_root(a):
+    if a < 0:
+        return "Error: Cannot calculate square root of negative number"
+    return math.sqrt(a)
+
+def input_numbers():
+    while True:
+        try:
+            a = float(input("Enter first number: "))
+            b = float(input("Enter second number: "))
+            break
+        except ValueError:
+            print("Invalid input: Please enter a valid number!")
+    return a, b
+
+# Main function
+def main():
+    print("Welcome to the good KISS calculator!")
+    while True:
+        print("")
+        print("Please select an operation:")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Square")
+        print("6. Square Root")
+        print("7. Exit")
+
+        choice = input("Enter your choice: ")
+
+        try:
+            choice = float(choice)
+        except ValueError:
+            print("")
+            print("Invalid input: Please enter a number listed above!")
+            continue
+
+        if choice == 7:
+            print("Thank you for using the calculator. Goodbye!")
+            break
+        elif choice == 1:
+            a, b = input_numbers()
+            print("Result: ", add(a, b))
+        elif choice == 2:
+            a, b = input_numbers()
+            print("Result: ", subtract(a, b))
+        elif choice == 3:
+            a, b = input_numbers()
+            print("Result: ", multiply(a, b))
+        elif choice == 4:
+            a, b = input_numbers()
+            print("Result: ", divide(a, b))
+        elif choice == 5:
+            a, b = input_numbers()
+            print("Result: ", square(a))
+        elif choice == 6:
+            a, b = input_numbers()
+            print("Result: ", square_root(a))
+        else:
+            print("Invalid choice! Please select a number between 1 and 7!")
+
+if __name__ == "__main__":
+    main()
