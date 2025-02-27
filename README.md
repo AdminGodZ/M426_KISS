@@ -36,11 +36,12 @@ The difference shows why KISS is important:
 - Simple code is easier to test
 
 ## How to Run
-```bash
-python good_KISS.py
+<pre style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+<code><span style="color: #2e7d32;">python good_KISS.py</span>
 # or
-python bad_KISS.py
-```
+<span style="color: #2e7d32;">python bad_KISS.py</span>
+</code>
+</pre>
 
 ## Learning Points
 - Keep solutions as simple as possible
