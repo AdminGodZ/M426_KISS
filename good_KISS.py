@@ -1,5 +1,6 @@
 # A good, KISS-based calculator with basic operations
 import math
+import time
 
 def add(a, b):
     return a + b
@@ -58,6 +59,7 @@ def main():
 
         if choice == 7:
             print("Thank you for using the calculator. Goodbye!")
+            time.sleep(1.5)
             break
         elif choice == 1:
             a, b = input_numbers()
