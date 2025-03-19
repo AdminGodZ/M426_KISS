@@ -1,4 +1,4 @@
-# Ein leicht verkomplizierter, Anti-KISS Taschenrechner mit basic Operationen
+# A bad, KISS-absent calculator with basic operations
 import math
 import time
 import random  # Unnötig hinzugefügt
