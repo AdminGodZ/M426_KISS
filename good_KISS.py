@@ -57,30 +57,28 @@ def main():
             print("Invalid input: Please enter a number listed above!")
             continue
 
-        if choice == 7:
+        case 1:
+            a, b = input_numbers()
+            print("Result: ", add(a, b))
+        case 2:
+            a, b = input_numbers()
+            print("Result: ", subtract(a, b))
+        case 3:
+            a, b = input_numbers()
+            print("Result: ", multiply(a, b))
+        case 4:
+            a, b = input_numbers()
+            print("Result: ", divide(a, b))
+        case 5:
+            a, b = input_numbers()
+            print("Result: ", square(a))
+        case 6:
+            a, b = input_numbers()
+            print("Result: ", square_root(a))
+        case 7:
             print("Thank you for using the calculator. Goodbye!")
             time.sleep(1.5)
             break
-        elif choice == 1:
-            a, b = input_numbers()
-            print("Result: ", add(a, b))
-        elif choice == 2:
-            a, b = input_numbers()
-            print("Result: ", subtract(a, b))
-        elif choice == 3:
-            a, b = input_numbers()
-            print("Result: ", multiply(a, b))
-        elif choice == 4:
-            a, b = input_numbers()
-            print("Result: ", divide(a, b))
-        elif choice == 5:
-            a, b = input_numbers()
-            print("Result: ", square(a))
-        elif choice == 6:
-            a, b = input_numbers()
-            print("Result: ", square_root(a))
-        else:
-            print("Invalid choice! Please select a number between 1 and 7!")
 
 if __name__ == "__main__":
     main()
